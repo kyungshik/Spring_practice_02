@@ -11,6 +11,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ConfigurationSingletonTest {
     @Test
     void configurationTest() {
+        //테스트
+        
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
